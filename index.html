@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="col-1">
+            <img class="caixaReg" src="assets/images/caixaImg1.png" alt="">
+            <button class="col1-btn"><i class="fa-solid fa-house" style="color: white;"></i>Início</button>
+            <button class="col1-btn"><i class="fa-solid fa-users" style="color: white;"></i>Clientes</button>
+            <button class="col1-btn"><i class="fa-sharp fa-solid fa-bag-shopping" style="color: white;"></i>Pedidos</button>
+            <button class="col1-btn"><i class="fa-solid fa-gear" style="color: white;"></i>Configurações</button>
+            <button class="col1-btn"><i class="fa-solid fa-chart-simple" style="color: white;"></i>Estatísticas</button>
+            <button class="col1-btn"><i class="fa-solid fa-right-from-bracket" style="color: white;"></i>Sair</button>
+        </div>
+        <div class="col-2">
+            <div class="categorias">
+                <h1>Categorias</h1>
+                <button class="col2-btn">Categoria 1</button>
+                <button class="col2-btn">Categoria 2</button>
+                <button class="col2-btn">Categoria 3</button>
+                <button class="col2-btn">Categoria 4</button>
+                <button class="col2-btn">Categoria 5</button>
+                <button class="col2-btn">Categoria 6</button>
+            </div>
+            <div class="produtos">
+                <h1>Produtos</h1> 
+                <input class="search-bar" type="search" name="search" placeholder=" Buscar Produtos">
+                <input class="search-bar-btn" type="submit" value="">
+                <div class="card-grid">
+                    <div class="produto-card">
+                        <img src="assets/images/1.png" alt="banana">
+                        <h4 class="card-titulo">Banana</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="assets/images/2.png" alt="tomate">
+                        <h4 class="card-titulo">Tomate</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="assets/images/3.png" alt="morango">
+                        <h4 class="card-titulo">Morango</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="assets/images/4.png" alt="abacaxi">
+                        <h4 class="card-titulo">Abacaxi</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="assets/images/5.png" alt="cebola">
+                        <h4 class="card-titulo">Cebola</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="assets/images/6.png" alt="chocolate">
+                        <h4 class="card-titulo">Chocolate</h4>
+                        <p class="card-preco">R$ 50,00</p>
+                        <button class="card-btn">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="carrinho">
+                <div class="cliente">
+                    <button class="col3-btn">Seu Nome</button>
+                </div>
+                <h1>Itens do Carrinho</h1>
+                <div class="carrinho-itens">
+
+                </div>
+                <div class="carrinho-resumo">
+                    <div>
+                        <p>Subtotal</p>
+                        <strong>R$0,00</strong> 
+                    </div>
+                    <div>
+                        <p>Frete</p>
+                        <strong>R$0,00</strong> 
+                    </div>
+                    <div>
+                        <p>Descontos</p>
+                        <strong>R$0,00</strong> 
+                    </div>
+                    <div>
+                        <p>Cupom</p>
+                        <strong>R$0,00</strong> 
+                    </div>
+                </div>
+                <div class="carrinho-btns">
+                    <button class="finalizar-btn">Cupom</button>
+                    <button class="finalizar-btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/fc0203a1e7.js" crossorigin="anonymous"></script>
+</html>
