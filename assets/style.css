@@ -23,6 +23,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border-right: 1px solid lightgrey;
+    height: 100vh;
 }
 
 .caixaReg {
@@ -63,17 +64,6 @@ h1 {
     border-right: 1px solid lightgray;
 }
 
-.search-bar {
-    height:42px;
-    border-radius: 20px;
-    border: 1px solid lightgray;
-    width: 33%;
-}
-
-.col-2 button, input{
-    margin-top: 15px;
-}
-
 .col2-btn {
     height: 42px;
     background-color: white;
@@ -98,8 +88,13 @@ h1 {
     margin: 15px 0 0 15px;
 }
 
-.produtos .search-bar{
+.search-bar {
+    height:42px;
     margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    width: 33%;
 }
 
 .card-grid {
@@ -110,10 +105,10 @@ h1 {
 }
 
 .produto-card {
-    border: 1px solid lightgray;
+    border: 0px solid lightgray;
     border-radius: 4px;
-    
     padding: 10px;
+    box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.4);
 }
 
 .produto-card img {
@@ -131,9 +126,9 @@ h1 {
     font-size: 1rem;
     font-weight: 400;
     box-shadow: 1px 1px 4px 1px rgba(51, 51, 51, 0.4);
-    width: 80%;
+    width: 60%;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .card-btn:hover {
@@ -145,6 +140,7 @@ h1 {
 .col-3 {
     background-color: white;
     min-width: 400px;
+    height: 100vh;
 }
 
 .cliente {
@@ -153,7 +149,7 @@ h1 {
     justify-content: center;
 }
 
-.col3-btn {
+.cliente-btn {
     background-color: #287DEB;
     color: white;
     border-radius: 5px;
@@ -166,7 +162,7 @@ h1 {
     width: 80%;
 }
 
-.col3-btn:hover {
+.cliente-btn:hover {
     background-color: #3362a0;
     transition: 0.5s;
     cursor: pointer;
@@ -194,7 +190,7 @@ h1 {
     align-items: center;
 }
 
-.finalizar-btn {
+.finalizar-btn, .cupom-btn {
     background-color: #287DEB;
     color: white;
     border-radius: 5px;
@@ -207,7 +203,7 @@ h1 {
     width: 80%;
 }
 
-.finalizar-btn:hover {
+.finalizar-btn:hover, .cupom-btn:hover {
     background-color: #3362a0;
     transition: 0.5s;
     cursor: pointer;
