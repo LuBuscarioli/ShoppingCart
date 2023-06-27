@@ -28,9 +28,11 @@ h1 {
 }
 
 .caixaReg {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 15px;   
+    margin-top: 15px;
+    width: 80px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
 }
 
 .col1-btn {
@@ -102,7 +104,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    max-height: 77vh;
+    max-height: 75vh;
     overflow: hidden;
     overflow-y: scroll;
 }
