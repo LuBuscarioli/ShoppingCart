@@ -24,13 +24,13 @@ h1 {
     flex-direction: column;
     border-right: 1px solid lightgrey;
     height: 100vh;
+    justify-content: space-around;
 }
 
 .caixaReg {
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 15px;
-    height: 100px;   
+    margin-top: 15px;   
 }
 
 .col1-btn {
