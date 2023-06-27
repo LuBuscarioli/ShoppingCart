@@ -98,11 +98,11 @@ h1 {
 }
 
 .card-grid {
-    margin: 15px;
+    margin: 3px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    max-height: 75vh;
+    max-height: 77vh;
     overflow: hidden;
     overflow-y: scroll;
 }
