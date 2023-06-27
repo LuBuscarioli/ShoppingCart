@@ -102,6 +102,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+    max-height: 75vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .produto-card {
