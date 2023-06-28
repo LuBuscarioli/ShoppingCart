@@ -90,6 +90,26 @@ h1 {
     margin: 15px 0 0 15px;
 }
 
+.barcode-btn {
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 1px 1px 4px 1px rgba(51, 51, 51, 0.4);
+}
+
+.barcode-btn i {
+    font-size: 2rem;
+}
+
+.barcode-btn:hover {
+    background-color: #e7e7e7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .search-bar {
     height:42px;
     margin-left: 15px;
@@ -100,11 +120,11 @@ h1 {
 }
 
 .card-grid {
-    margin: 3px;
+    margin: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    max-height: 90vh;
+    max-height: 600px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -191,27 +211,47 @@ h1 {
     border-bottom: 1px dotted lightgray;
 }
 
-.carrinho-btns {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.finalizar-btn {
+    grid-area: finalizar;
+    justify-self: center;
 }
 
-.finalizar-btn, .cupom-btn {
+.cupom-btn {
+    grid-area: cupom;
+    justify-self: end;
+}
+
+.desconto-btn {
+    grid-area: desconto;
+    justify-self: start;
+}
+
+.carrinho-btns {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+     "cupom desconto"
+     "finalizar finalizar";
+    
+}
+
+.finalizar-btn, .cupom-btn, .desconto-btn {
     background-color: #287DEB;
     color: white;
     border-radius: 5px;
     border-style: none;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 8px;
+    /*margin-bottom: 15px;*/
     font-size: 1rem;
     font-weight: 600;
     box-shadow: 1px 1px 4px 1px rgba(51, 51, 51, 0.4);
-    width: 50%;
+    width: 66%;
 }
 
-.finalizar-btn:hover, .cupom-btn:hover {
+.finalizar-btn:hover, .cupom-btn:hover, .desconto-btn:hover {
     background-color: #3362a0;
     transition: 0.5s;
     cursor: pointer;
