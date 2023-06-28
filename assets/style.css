@@ -15,7 +15,7 @@ h1 {
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 6fr 3fr;
+    grid-template-columns: 1fr 6fr 1fr;
 }
 
 .col-1 {
@@ -129,6 +129,12 @@ h1 {
     overflow-y: scroll;
 }
 
+.cards-container {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+}
+
 .produto-card {
     border: 0px solid lightgray;
     border-radius: 4px;
@@ -137,7 +143,7 @@ h1 {
 }
 
 .produto-card img {
-    height: 66%;
+    width: 80px;
     display: block;
     margin: 0 auto;
 }
